@@ -5,6 +5,7 @@
     --light-gray: rgb(236, 236, 236);
     --error-red: rgb(169, 1, 1);
     --active-border: #6f94df;
+    --dark-green: #596D48;
 }
 
 * {
@@ -72,7 +73,7 @@ div.right-container {
 }
 
 div.top-section {
-    padding: 90px 200px 60px 50px;
+    padding: 90px 200px 40px 50px;
 }
 
 div.top-section p {
@@ -91,6 +92,7 @@ div.mid-section {
     padding: 20px 0 30px 50px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
 }
 
 div.mid-section p {
@@ -131,5 +133,32 @@ input:focus {
     border: none;
     outline: .07rem solid var(--active-border);
     border-radius: 2px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2)
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+}
+
+div.bottom-section {
+    padding: 30px 50px;
+}
+
+div.bottom-section button {
+    background-color: var(--dark-green);
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.06rem;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+div.bottom-section p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+div.bottom-section a {
+    color: var(--dark-green);
+    font-weight: 700;
+    text-decoration: none;
 }
