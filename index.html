@@ -39,15 +39,15 @@
                     </div>
                     <div>
                         <label for="phone_number">PHONE NUMBER</label>
-                        <input type="tel" id="phone_number" name="phone_number" pattern=".?(\\d{3}).*(\\d{3}).*(\\d{4})">
+                        <input type="tel" id="phone_number" name="phone_number" pattern=".?(\d{3}).*(\d{3}).*(\d{4})">
                     </div>
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="text" id="password" name="password" pattern="\w" minlength="8" maxlength="20">
+                        <input type="text" id="password" name="password" pattern="(\w{8, 20})" minlength="8" maxlength="20">
                     </div>
                     <div>
                         <label for="password_confirmation">CONFIRM PASSWORD</label>
-                        <input type="password_confirmation" id="password_confirmation" name="password_confirmation" pattern="\w" minlength="8" maxlength="20">
+                        <input type="password_confirmation" id="password_confirmation" name="password_confirmation" pattern="(\w{8, 20})" minlength="8" maxlength="20">
                     </div>
                 </form>
             </div>
