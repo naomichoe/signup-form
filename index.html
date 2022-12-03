@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="overlay-content">
+                <img class="overlay-img" src="images/odin-lined.png" alt="icon">
+                <h1 class="overlay-text">ODIN</h1>
+            </div>
+            <footer>Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></footer>
+        </div>
+        <div class="right-container">
+            <div class="top-section">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="mid-section form">
+                <form action="/some-server" method="post">
+                    <p>Let's do this!</p>
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div>
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" pattern="([a-zA-Z0-9\\_\\-\\.]+)@([a-zA-Z]+).(.+)">
+                    </div>
+                    <div>
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" id="phone_number" name="phone_number" pattern=".?(\\d{3}).*(\\d{3}).*(\\d{4})">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="text" id="password" name="password" pattern="\w" minlength="8" maxlength="20">
+                    </div>
+                    <div>
+                        <label for="password_confirmation">CONFIRM PASSWORD</label>
+                        <input type="password_confirmation" id="password_confirmation" name="password_confirmation" pattern="\w" minlength="8" maxlength="20">
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-section">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
