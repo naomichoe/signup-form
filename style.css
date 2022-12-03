@@ -2,6 +2,7 @@
 
 :root {
     --white: hsl(0, 0%, 100%);
+    --light-gray: rgb(236, 236, 236);
 }
 
 * {
@@ -25,7 +26,7 @@ div.main-container {
 div.left-container {
     color: var(--white);
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
-    width: 640px;
+    min-width: 540px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,7 +41,6 @@ div.overlay-content {
     padding: 10px 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    
 }
 
 div.overlay-content h1 {
@@ -59,4 +59,38 @@ div.left-container footer {
 
 div.left-container footer, a {
     color: inherit;
+}
+
+/* right side of site */
+
+div.right-container {
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+div.top-section {
+    padding: 70px 50px;
+}
+
+div.top-section p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+div.top-section p:last-child {
+    margin-top: 20px;
+}
+
+div.mid-section {
+    background-color: var(--white);
+    width: 100%;
+    padding: 20px 50px;
+}
+
+div.mid-section p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
 }
